@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kitsain</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/omakuva.png"
+              alt="Ella Elomaa Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ella Elomaa</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Kitsain</h1>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                The application was made as part of the spring 2023 project course at Tampere University. Kitsain
+                is a Helsinki based start-up venture aiming to release an application that allows the user to track their pantry items'
+                expiration dates, nutritional qualities, and cost. Additional features are shopping lists, price comparisons, 
+                social media features, with many more planned.
+              </p>
+              <p class="project-details__desc-para">
+                Our project was MVP number two. Of the aforementioned features we implemented the pantry item tracking, shopping lists, branding,
+                GUI, and the history tab, which allows the users see what items were either used or discarded each month. I was in charge of designing, 
+                implementing, and testing all database related features in the application. The database I chose was Realm, which is a mobile-first 
+                object database management system. The database can also be synced with Mongo Atlas, which could be useful in future development. 
+                While the final MVP did not include nutritional information, 
+                data was retrieved from Open Food Facts and included in the 
+                database model. 
+              </p>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Flutter</div>
+                <div class="skills__skill">Dart</div>
+                <div class="skills__skill">Realm</div>
+                <div class="skills__skill">Open Food Facts</div>
+                <div class="skills__skill">GIT</div>
+              </div>
+            </div>
+            <div class="projects__content">
+              <h3 class="project-details__content-title">Gallery</h3>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/mainview.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Item card</h3>
+                  <p class="projects__row-content-desc">
+                    Includes item name, category, date opened, expiration date, 
+                    button to mark/toggle favorite item, a notes box, and a 
+                    "more" button to either edit the item, delete the item, or mark it
+                    as either used or wasted.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/bbdates.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Card colours</h3>
+                  <p class="projects__row-content-desc">
+                    The colour bar on the left indicates the expiration status: black for
+                    expired items, red for items expiring today, yellow for items
+                    expiring within the week (also included the date), green for 
+                    items expiring in more than a week, and grey for items without an
+                    expiration date.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/del.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Delete item</h3>
+                  <p class="projects__row-content-desc">
+                    Deleting an item has a warning message, as the item
+                    is deleted from the database and cannot be retrieved again.
+                  </p>
+                </div>
+              </div>              
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/cats.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Categories</h3>
+                  <p class="projects__row-content-desc">
+                    Pantry view when sorted by category. 
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/filter_opts.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Filtering options</h3>
+                  <p class="projects__row-content-desc">
+                    Besides showing all items by category, filter options include
+                    all items, opened itemes only, or items marked as favorite.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/sort_exp.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Sorting options</h3>
+                  <p class="projects__row-content-desc">
+                    Regardless of how the items are filtered, the items can be
+                    sorted alphabetically, by nearest expiration date, or by
+                    the order they were added in.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont">
+                  <img
+                    src="./assets/realm/used.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Pantry history</h3>
+                  <p class="projects__row-content-desc">
+                    In the pantry view, items can be marked as either used or wasted.
+                    In the history page there are tabs for both. For each month,
+                    the application counts how many of the history items were in
+                    either category. In this picture, in January 2023 two items
+                    were moved to history tab, of which 50 % was marked as used
+                    - in this case a banana. 
+                  </p>
+                </div>
+              </div>
+              <div class="project-details__links">
+              <h3 class="project-details__content-title">Source code</h3>
+              <a
+                href="https://github.com/kitsain/Kitsain-Frontend-Spring2023"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Ella Elomaa</h4>
+            <p class="main-footer__short-desc">
+              Let's get in touch! 
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

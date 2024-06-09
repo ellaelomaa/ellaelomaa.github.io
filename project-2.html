@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Helmin NLP-ohjelma</title>
+    <meta name="description" content="NLP" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/omakuva.png"
+              alt="Ella Elomaa Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ella Elomaa</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">NLP</h1>
+
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                Helmin NLP-ohjelma is a natural language processing tool for
+                Finnish texts. The program calculates some basic statistics,
+                such as sentence length by graphemes and words, most used
+                words, and unique words. The program also calculates information
+                about morphemes, uses lemmatization to analyze lexical density,
+                and a employs few different algorithms to compare the corpora 
+                writers. The results are saved in a .xlsx-file.
+              </p>
+              <p class="project-details__desc-para">
+                In this project the user supplies the corpora in text files,
+                one folder per each writer. Previously I've done a similar
+                program, where the corpora came from Project Gutenberg, fetched
+                with BeautifulSoup.
+              </p>
+              <p class="project-details__desc-para">
+                Hover over images to enlarge.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TKinter</div>
+                <div class="skills__skill">TTKBootstrap</div>
+                <div class="skills__skill">Scikit-learn</div>
+                <div class="skills__skill">Spacy</div>
+                <div class="skills__skill">NLTK</div>
+                <div class="skills__skill">OpenPyxl</div>
+                <div class="skills__skill">UralicNLP</div>
+              </div>
+            </div>
+            <div class="projects__content">
+              <h3 class="project-details__content-title">Gallery</h3>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/1.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Main view</h3>
+                  <p class="projects__row-content-desc">
+                    Main view of the app. From the left tool bar item the user
+                    can either read information about the application or quit
+                    the program, and from the right item the user can change
+                    the colour theme. On the main window, on the left are all
+                    the different natural language processing functions for the
+                    user to choose from. On the right side are the instructions
+                    and a list of missing/future features. 
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/2.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">In progress</h3>
+                  <p class="projects__row-content-desc">
+                    Main view when in progress; the colour theme also has been
+                    changed. When the program is in progress, the start button
+                    is disabled. The download bar length is calculated from the
+                    corpora size and the program functions chosen by the user. 
+                    The GUI also informs the user how many tasks have been done,
+                    how many there are in total, and what phase the program is 
+                    currently busy doing.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/3.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Error message</h3>
+                  <p class="projects__row-content-desc">
+                    As the application will crash when trying to edit an already
+                    opened file, the program checks that the resulting .xlsx-
+                    file is closed before starting the program. In case the
+                    user gets naughty or bored, and tries to open the file when
+                    the program is running, the application also checks the file
+                    before saving. In both cases the same error dialogue is
+                    shown, and the application will not continue before 
+                    closing the file.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/4.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">.xlsx-file</h3>
+                  <p class="projects__row-content-desc">
+                    The first page of the resulting xlsx-file. Column headings
+                    are the text file and folder names, while the row headings
+                    are the calculations.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/5.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">HFL page</h3>
+                  <p class="projects__row-content-desc">
+                    In the HFL page are listed the most common words for each text.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__row">
+                <div class="projects__row-img-cont_nlp">
+                  <img
+                    src="./assets/NLP/6.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Cosine similarity</h3>
+                  <p class="projects__row-content-desc">
+                    The third page depicts the cosine similarity between 
+                    authors.
+                  </p>
+                </div>
+              </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Source code</h3>
+              <a
+                href="https://github.com/ellaelomaa/nlp"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <p class="main-footer__short-desc">
+              Let's get in touch! 
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
