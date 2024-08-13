@@ -20,33 +20,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   box-sizing: inherit;
   font-family: inherit; }
 
-  /* 
-  Periaatteessa tarvitaan:
-  valkoinen/pohjaväri
-  aksenttiväri
-  tumma teksti
-  valkoinen teksti
-      tummasta tekstistä hieman vaaleampi versio
-  taustaväri mainille
-      hieman tummempi versio mainista
-  */
 
-  /* :root {
-    --first-colour: #fdcbd6;
-    --second-colour: #68ba5b;
-    --third-colour: #6c5255;
-    --fourth-colour: #fdfdfd;    
-  } */
-
-  /* :root {
-    --first-colour: #eaa2e7;
-    --dark: #501151;
-    --third-colour: #007676;
-    --light: #fffade;
-    --white: var(--taustavari)    
-  } */
-
-/* Lila-vihreä */
 :root {
   --taustavari: #f7e6ff;;
   --aksentti: #0099c1;
@@ -56,17 +30,6 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   --pohjavari: #cbe2fa;
   --pohjavari-tummempi: #72aae0;
 }
-
-/* Lila-vihreä 2 */
-/* :root {
-  --taustavari: #fff6fb;
-  --aksentti: #149184;
-  --tummin-teksti: #554149;
-  --tumma-teksti: #bca5ae;
-  --vaalea-teksti: #fff6fb;
-  --pohjavari: #ffc1da;
-  --pohjavari-tummempi: #e860a2;
-} */
 
 html {
   font-size: 62.5%;

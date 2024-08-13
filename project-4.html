@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Notes application</title>
-    <meta name="description" content="Notes applciation" />
+    <title>PSQL demo</title>
+    <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -71,16 +71,13 @@
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
-
           </ul>
         </div>
       </div>
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Notes application</h1>
-
-      </div>
+        <h1 class="heading-primary">PSQL demo</h1>
     </section>
     <section class="project-details">
       <div class="main-container">
@@ -89,30 +86,38 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Menagerie is a notes taking, or list making, application made for my own purposes and for practice.
-                The idea came from my love for tea and the local teashop, where I couldn't always remember what 
-                varietes I'd already tried and what my opinion was of them - so I started working on an application
-                to remedy that. 
+                A simple demo made with PSQL, PHP, Python and JQuery. The demo was coded with VSCode and hosted on a local server with XAMPP. 
+                PgAdmin4 was used for database management. On the (XAMPP-hosted) webpage the user can sort results by various attributes,
+                either in ascending or descending order. The user can also choose up to three genres to filter the movies, and use the 
+                textbox to query movie titles.
 
               </p>
               <p class="project-details__desc-para">
-                The application is being made in Flutter, which I was already familiar with. The database is implemented
-                with SQFlite, a plugin for the popular and lightweight SQLite database. State management is handled with Provider.
-                All images are from public domain sources.
+                Dataset by Rakkesh Araving G from Kaggle. The set included more than 5000 movies, and the following attributes are saved 
+                in the database: title, year, IMDB-rating, runtime (min), main genre, side genres, director(s), and actors.
               </p>
+
               <p class="project-details__desc-para">
-                This project not only demonstrates my understanding of relational dabases and state management, but also
-                why I am not majoring in graphic design or UX. 
+                After selecting the the dataset, I did some quick magic with Python - I was still very much in Python mode after my last project.
+                I checked the encoding, skipped bad lines, and created a temporary table with the columns I wanted from the original dataset. 
+                Then I picked all unique genres and people and saved them to their own csv-files. With people, the assumption was that
+                a person always has a surname, and that is the last name of the name string - if they only go by one name, that is 
+                saved as a surname and first name is set to null. All three csv-files - temp, genres, and personnel - were imported to
+                PgAdmin4, where the proper work began. For example, I used the temp-table to compare names in the personnel-table to 
+                create join tables for directors and actors. 
               </p>
             </div>
+
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">Flutter</div>
-                <div class="skills__skill">Dart</div>
-                <div class="skills__skill">Provider</div>
-                <div class="skills__skill">SQFlite</div>
-                <div class="skills__skill">Git</div>
+                <div class="skills__skill">PSQL</div>
+                <div class="skills__skill">PHP</div>
+                <div class="skills__skill">PgAdmin4</div>
+                <div class="skills__skill">XAMPP</div>
+                <div class="skills__skill">JQuery</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">Python</div>
               </div>
             </div>
             <div class="projects__content">
@@ -120,52 +125,38 @@
               <div class="projects__row">
                 <div class="projects__row-img-cont_nlp">
                   <video controls width="300">
-                    <source src="assets/sqflite/add_tarot.mp4" type="video/mp4">
+                    <source src="assets/psql/psql.mp4" type="video/mp4">
                    </video>
                 </div>
                 <div class="projects__row-content">
-                  <h3 class="projects__row-content-title">Tarot deck</h3>
+                  <h3 class="projects__row-content-title">A simple web page</h3>
                   <p class="projects__row-content-desc">
-                    Tarot deck view. Cards are added by sliding it to the left ("past"), down ("present"), or right ("future").
-                    Cards can be deleted and edited. 
+                    A video showcasing the sorting and filtering functions. Click bottom right to enlarge.
                   </p>
                 </div>
+                <div class="projects__row">
+                  <div class="projects__row-img-cont_nlp">
+                    <img
+                      src="./assets/psql/query.png"
+                      alt="Software Screenshot"
+                      class="projects__row-img"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="projects__row-content">
+                    <h3 class="projects__row-content-title">Query snapshot</h3>
+                    <p class="projects__row-content-desc">
+                      A snapshot of the main query that selects all table information. For the full source code, please
+                      visit the project's GitHub, linked below. 
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="projects__row">
-                <div class="projects__row-img-cont_nlp">
-                  <video controls width="300">
-                    <source src="assets/sqflite/add_note.mp4" type="video/mp4">
-                   </video>
-                </div>
-                <div class="projects__row-content">
-                  <h3 class="projects__row-content-title">Adding and editing a note</h3>
-                  <p class="projects__row-content-desc">
-                    Notes are added to folders, with one default folder ("Miscellaneous") already created. 
-                    The same form is used when adding and editing a note, with read-only mode toggled by the eye icon 
-                    on the top right corner. 
-                  </p>
-                </div>
-              </div>
-              <div class="projects__row">
-                <div class="projects__row-img-cont_nlp">
-                  <video controls width="300">
-                    <source src="assets/sqflite/sort_notes.mp4" type="video/mp4">
-                   </video>
-                </div>
-                <div class="projects__row-content">
-                  <h3 class="projects__row-content-title">Notes list</h3>
-                  <p class="projects__row-content-desc">
-                    Notes are sorted by category, and the user can further sort the notes by when they were 
-                    added or modified, or alphabetically. All orders can be ascending or descending. Furthermore,
-                    notes can be pinned, so that they always stay on top of the list.
-                  </p>
-                </div>
-                
-              </div>
-            <div class="project-details__links">
+            
+              <div class="project-details__links">
               <h3 class="project-details__content-title">Source code</h3>
               <a
-                href="https://github.com/ellaelomaa/nlp"
+                href="https://github.com/ellaelomaa/psql_php_demo/"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Github</a
